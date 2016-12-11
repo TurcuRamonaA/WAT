@@ -1,0 +1,321 @@
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="container">
+			<div >
+			<img class="logo" src="imagini/Logo.png" margin-left: 40px;></img>
+		    </div>
+			<div class="accordion">
+				<span id="accordion" class="target-fix"></span>
+				<div>
+					<span id="accordion1" class="target-fix"></span>
+					<a id="open-accordion1" title="open" href="#accordion1">
+						Team:
+					</a>
+					<a id ="close-accordion1" title="close" href="#accordion">
+						Team:
+					</a>
+					<div class="accordion-content">
+						<p> 
+						Scutaru Constantin</br>
+						Amarandei Sandra-Maria</br>
+						Turcu Ramona-Andreea</br>
+						</br>
+
+						Master MLC1 </br>
+						Facultatea de Informatica</br>
+						Universitatea Alexandru Ioan Cuza Iasi</br>
+					</p>
+				</div>
+			</div>
+
+
+<div>
+	 	<span class="target-fix" id="accordion2"></span>
+		<a href="#accordion2" id="open-accordion2" title="open">Project description:</a>
+		<a href="#accordion" id="close-accordion2" title="close">Project description:</a> 
+		<div class="accordion-content">
+ 	   <p> 
+ 	   	(WAT) Web Annotator for Temporality</br></br></br>
+	Create an online annotation tool associated with a web resource, typically a web page. </br></br>
+	One user can add, modify, remove or share information from an XML-annotated resource as (s)he wants in order to obtain his/her own annotation. For sharing, maybe a role-based access control mechanism should be used (e.g., X can edit and share, Y can only view annotations, etc.).</br></br>
+	For each XML element, the user could specify useful information, like type, relations with other elements, perspective, etc.</br></br> 
+	The user will have some default tags for annotation and also he will be able to set his own tags for the text analyzed.</br></br> 
+	There will be some default colors for the annotated text to improve readability. By using certain existing vocabularies/thesauri/ontologies – i.e. conceptual models (see 
+	<a color:"#0e22bb" href="http://prefix.cc/popular/all"> http://prefix.cc/popular/all</a>
+	) or providing a user-defined vocabulary (via an URL). For temporal constructs, at least DateTime and Event (from schema.org), plus OWL-Time <a class="interfata" href="https://www.w3.org/TR/owl-time/" > https://www.w3.org/TR/owl-time/</a> should be used.</br></br>
+	Available knowledge will be accessed via a SPARQL endpoint, in conjunction to other sources of interest such as DBpedia and/or Wikidata or the user can upload one book/text file, for example. In order to  give a good output, this will be in an XML format and will contain the entire annotated resource.The input XML must be validated first in order to be processed.</br></br>
+	IDs will be automatically generated, in sequence, with symbols beginning with the first letters of the elements. </br></br>
+
+ 	   </p>
+ 	</div>
+ </div>
+<div class="etapa">
+<p>Some documentation: </p> </div>
+
+
+
+
+<div>
+	 	<span class="target-fix" id="accordion3"></span>
+		<a href="#accordion3" id="open-accordion3" title="open"> Introduction:</a>
+		<a href="#accordion" id="close-accordion3" title="close"> Introduction:</a> 
+		<div class="accordion-content">
+ 	   <p>
+ 	   	<b><i>What is an annotator?</i></b></br>
+ 	   	Basicaly, An annotation is a metadata attached to text, image, or other data. Often, annotations make reference to a specific part of the original data.</br></br>
+ 	   	<b>Software engineering</b> </br></br>
+ 	   	<b><i>Text documents</i></b></br>
+		Markup languages like XML and HTML annotate text in a way that is syntactically distinguishable from that text. They can be used to add information about the desired visual presentation, or machine-readable semantic information, as in the semantic web.</br>
+
+		<b><i>Source control</i></b></br>
+		The "annotate" function (also known as "blame" or "praise") used in source control systems such as Git, Team Foundation Server and Subversion determines who committed changes to the source code into the repository. This outputs a copy of the source code where each line is annotated with the name of the last contributor to edit that line (and possibly a revision number). This can help establish blame in the event a change caused a malfunction, or identify the author of brilliant code.</br>
+
+</p>
+</div>
+</div>
+
+<div>
+	 	<span class="target-fix" id="accordion4"></span>
+		<a href="#accordion4" id="open-accordion4" title="open"> Description in RDF:</a>
+		<a href="#accordion" id="close-accordion4" title="close"> Description in RDF:</a> 
+		<div class="accordion-content">
+ 	   <p>
+ 	   	<b><i>Resource Description Framework (RDF)</i></b>
+	  </p>
+</div>
+</div>
+
+<div>
+	 	<span class="target-fix" id="accordion5"></span>
+		<a href="#accordion5" id="open-accordion5" title="open"> Resource representations:</a>
+		<a href="#accordion" id="close-accordion5" title="close"> Resource representations:</a> 
+		<div class="accordion-content">
+			<p>
+				<b><i> GitHub Project:<a color:"#0e22bb" href="https://github.com/TurcuRamonaA/WAT/">https://github.com/TurcuRamonaA/WAT/</a></i></b></br>
+				<b><i> WebSite Location:<a color:"#0e22bb" href="http://students.info.uaic.ro/~ramona.turcu/WAT/">http://students.info.uaic.ro/~ramona.turcu/WAT/</a></i></b></br>
+				<b><i> Video file Location:<a color:"#0e22bb" href="http://youtube.com">http://youtube.com</a></i></b></br>
+				<b><i> Documentation:<a color:"#0e22bb" href="http://students.info.uaic.ro/~ramona.turcu/indexDOC.html">http://students.info.uaic.ro/~ramona.turcu/indexDOC.html</a></i></b></br>
+
+
+</p>
+</div>
+</div>
+
+<div class="etapa">
+<p>Overall design from the point of view of a software engineer:</p> </div>
+
+<div>
+	 	<span class="target-fix" id="accordion7"></span>
+		<a href="#accordion7" id="open-accordion7" title="open"> Initial diagram:</a>
+		<a href="#accordion" id="close-accordion7" title="close"> Initial diagram:</a> 
+		<div class="accordion-content">
+			<img class="photo" src="diagrams/mainFlow.png"></img>
+			<p> The diagram shows the main components files that would contain application: </p>
+			<img class="photo" src="diagrams/files.png"></img>
+
+</div>
+</div>
+
+<div>
+	 	<span class="target-fix" id="accordion8"></span>
+		<a href="#accordion8" id="open-accordion8" title="open">UML diagrams:</a>
+		<a href="#accordion" id="close-accordion8" title="close">UML diagrams:</a> 
+		<div class="accordion-content">
+			<img class="photo" src="imagini/contact.png"></img>
+
+</div>
+</div>
+<div>
+	 	<span class="target-fix" id="accordion9"></span>
+		<a href="#accordion9" id="open-accordion9" title="open">Input/output data formats:</a>
+		<a href="#accordion" id="close-accordion9" title="close">Input/output data formats:</a> 
+		<div class="accordion-content">
+		
+     
+</div>	
+</div>
+<div>
+	 	<span class="target-fix" id="accordion10"></span>
+		<a href="#accordion10" id="open-accordion10" title="open">Modularization:</a>
+		<a href="#accordion" id="close-accordion10" title="close">Modularization:</a> 
+		<div class="accordion-content">
+			<p> </p>
+				 <img class="photo" src="diagrams/modularization.png"></img>
+
+</div>
+</div>
+
+<div class="etapa">
+<p>Overall design from a user interaction point of view: </p> </div>
+<div>
+<span class="target-fix" id="accordion11"></span>
+		<a href="#accordion11" id="open-accordion11" title="open">Web interface sketches:</a>
+		<a href="#accordion" id="close-accordion11" title="close">Web interface sketches:</a> 
+		<div class="accordion-content">
+			<div class="interfata">
+			
+		</div>
+	
+</div>
+</div>
+<div>
+<span class="target-fix" id="accordion12"></span>
+		<a href="#accordion12" id="open-accordion12" title="open">Prototypes:</a>
+		<a href="#accordion" id="close-accordion12" title="close">Prototypes:</a> 
+		<div class="accordion-content">
+			<div class="interfata">
+			
+		</div>
+	
+</div>
+</div>
+<div class="etapa">
+<p>Internal data structures/models: </p> </div>
+<div>
+<span class="target-fix" id="accordion13"></span>
+		<a href="#accordion13" id="open-accordion13" title="open"> LOGIN/LOGOUT module: </a>
+		<a href="#accordion" id="close-accordion13" title="close"> LOGIN/LOGOUT module: </a> 
+		<div class="accordion-content">
+			<p>
+
+			</p>
+				<p>
+				 Activity diagram:
+				</p>
+				 <img class="photo" src="diagrams/activity_login.png"></img>
+				 <p>
+				 Component diagram:
+				</p>
+				 <img class="photo" src="diagrams/myaccount.png"></img>
+</div>
+</div>
+<div>
+<span class="target-fix" id="accordion14"></span>
+		<a href="#accordion14" id="open-accordion14" title="open"> ANNOTATION module: </a>
+		<a href="#accordion" id="close-accordion14" title="close"> ANNOTATION module: </a> 
+		<div class="accordion-content">
+			<p>
+
+			</p>
+				<p>
+				 Activity diagram:
+				</p>
+				 <img class="photo" src="diagrams/activity_annotation.png"></img>
+				 <p>
+				 Component diagram:
+				</p>
+				 <img class="photo" src="diagrams/mainpage.png"></img>
+</din>
+</div>
+<div>
+<span class="target-fix" id="accordion15"></span>
+		<a href="#accordion15" id="open-accordion15" title="open"> Available knowledge module: </a>
+		<a href="#accordion" id="close-accordion15" title="close"> Available knowledge module: </a> 
+		<div class="accordion-content">
+			<p>
+			</p>
+				<p>
+				 Activity diagram:
+				</p>
+				 <img class="photo" src="diagrams/activity_ava_kn.png"></img>
+
+</div>
+</div>
+<div>
+<span class="target-fix" id="accordion16"></span>
+		<a href="#accordion16" id="open-accordion16" title="open"> My tag history module: </a>
+		<a href="#accordion" id="close-accordion16" title="close"> My tag history module: </a> 
+		<div class="accordion-content">
+			<p>
+			</p>
+				<p>
+					Activity diagram:
+				</p>
+				 <img class="photo" src="diagrams/activity_myTagHistory.png"></img>
+</div>
+</div>
+<div>
+<span class="target-fix" id="accordion17"></span>
+		<a href="#accordion17" id="open-accordion17" title="open"> CONTACT module: </a>
+		<a href="#accordion" id="close-accordion17" title="close"> CONTACT module: </a> 
+		<div class="accordion-content">
+			<p>
+			</p>
+				<p>
+					Activity diagram:
+				</p>
+				 <img class="photo" src="diagrams/activity_contact.png"></img>
+				 <p>
+					Component diagram:
+				</p>
+				 <img class="photo" src="diagrams/contact.png"></img>
+</div>
+</div>
+<div>
+<span class="target-fix" id="accordion18"></span>
+		<a href="#accordion18" id="open-accordion18" title="open"> DB module: </a>
+		<a href="#accordion" id="close-accordion18" title="close"> DB module: </a> 
+		<div class="accordion-content">
+			<p>
+			</p>
+				<p>
+					Activity diagram:
+				</p>
+				 <img class="photo" src="diagrams/activity_db.png"></img>
+				 <p>
+					Table:
+				</p>
+				 <img class="photo" src="diagrams/db.png"></img>
+</div>
+</div>
+<div class="etapa">
+<p> Interoperability, performance, and/or security : </p> </div>
+	<div>
+<span class="target-fix" id="accordion20"></span>
+		<a href="#accordion20" id="open-accordion20" title="open">  : </a>
+		<a href="#accordion" id="close-accordion20" title="close">  : </a> 
+		<div class="accordion-content">
+			<p>Vom incerca sa scriem o functie cu ajutorul careia sa securizam datele si sa salvam eventualele atacuri .</br>
+Functia va converti in entitati HTML o mare parte din caracterele speciale care pot face rau dar nu vom converti si caracterul "diez" sau "and" .</br>
+Pentru a salva eventualele atacuri ne vom folosi de un tabel in baza de date pe care il vom crea ulterior . Tabelul va contine 4 campuri ( IP , browser , data , tip ) .</br>
+Vom implementa o functie aspra variabilelor care vor avea o valoare numerica .</br>
+Astfel , in functie de anumite caractere vom sti ce a incercat atacatorul sa faca si vom salva in baza de date IP-ul si browserul sau . </br>
+
+
+			</p>
+				
+</div>
+</div>
+<div>
+<span class="target-fix" id="accordion21"></span>
+		<a href="#accordion21" id="open-accordion21" title="open">  : </a>
+		<a href="#accordion" id="close-accordion21" title="close">  : </a> 
+		<div class="accordion-content">
+			<p>
+				
+			</p>
+				
+</div>
+</div>
+
+<div class="etapa">
+<p>References and Webography: </p> </div>
+	<div>
+<span class="target-fix" id="accordion23"></span>
+		<a href="#accordion23" id="open-accordion23" title="open">  Webografie : </a>
+		<a href="#accordion" id="close-accordion23" title="close">  Webografie : </a> 
+		<div class="accordion-content">
+			<p> http://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html</br>
+				http://www.ixedo.ro/page/tehnologii-web-software</br>
+			   http://webappsuccess.com/web-technology-fundamentals.html</br>
+			</p>
+				
+</div>
+</div>
+	</body>
+
+</html>

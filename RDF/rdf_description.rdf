@@ -1,0 +1,12 @@
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:region="http://www.country-regions.fake/">
+	<!-- Body Code Omitted -->
+	<rdf:Description rdf:about="http://students.info.uaic.ro/~ramona.turcu/WAT/">
+
+		<!-- Statement Code Omitted -->
+
+	</rdf:Description>
+
+</rdf:RDF>

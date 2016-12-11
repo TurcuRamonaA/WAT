@@ -1,0 +1,208 @@
+
+
+body{
+	margin: auto;
+	background-color: #E9EAED;
+  width: 100%;
+}
+.container{
+ width:1200px;
+	margin: auto;
+	background-color: white;
+-webkit-box-shadow: -1px -1px 44px -14px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px -1px 44px -14px rgba(0,0,0,0.75);
+box-shadow: -1px -1px 44px -14px rgba(0,0,0,0.75);
+}
+
+.url{
+text-decoration: none;
+}
+.accordion {
+  position: relative;
+  margin: 60px auto;
+  width: 80%;
+}
+[id*="open-accordion"], [id*="close-accordion"] {
+background: #158CCE none repeat scroll 0% 0%;
+border-bottom: 1px solid #fff;
+line-height: 31px;
+height: 35px;
+display: block;
+margin: 0 auto;
+position: relative;
+width: 99%;
+margin-bottom: 10px;
+}
+
+[id*="close-accordion"] {
+  display: none;
+}
+
+.accordion a {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: normal;
+  padding-left: 2%;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+[id*="open-accordion"]:after, [id*="close-accordion"]:after {
+  content: "";
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  z-index: 999;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.target-fix {
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.accordion-content {
+  background: #fff;
+  height: 0;
+  margin: -1px auto 0;
+  padding: 0 2.5%;
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+}
+.accordion a {
+    color: #2d12b9;
+    font-size: 1em;
+    font-weight: normal;
+    padding-left: 2%;
+    text-decoration: none;
+    text-shadow: none;
+}
+.accordion span:target ~ .accordion-content {
+  display: block;
+  height: auto;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.accordion span:target ~ [id*="close-accordion"] {
+  display: block;
+}
+
+.accordion span:target ~ [id*="open-accordion"] {
+  display: none;
+}
+
+.accordion span:target ~ [id*="close-accordion"]:after {
+  border-top: 10px solid #333;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+.adr span{
+display:block;
+}
+#interfata {
+    color: #1034CF;
+    font-size: 1.25em;
+    font-weight: normal;
+    padding-left: 2%;
+    text-decoration: none;
+    text-shadow: none;
+}
+blockquote::before {
+    content: "\201C";
+  }
+  blockquote::after {
+    content: "\201C";
+  }
+  .interfata a {
+    text-decoration: none;
+    color: #191A18;
+}
+.interfata a:hover{
+    text-decoration: none;
+    color: #191A18;
+    font-size: 40px;
+  }
+  .interfata a:visited{
+    text-decoration: none;
+    color:blue;
+    font-size: 40px;
+  }
+  .vcard{
+  background: -webkit-linear-gradient( 135deg,#EBAEAB , #ABE8EB ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient( 135deg,#EBAEAB , #ABE8EB ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient( 135deg,#EBAEAB , #ABE8EB ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient( 135deg,#EBAEAB , #ABE8EB ); /* Standard syntax */
+  }
+  .logo{
+	margin-left: 40px;
+	margin-top: 10px;
+}
+.photo{
+height: 402px;
+width: 891px;
+}
+.photohp {
+   height: 891px;
+width: 891px;
+}
+p{
+	 font-family: 'Open Sans', sans-serif;
+}
+@media  screen and (min-device-width : 200px) and (max-device-width : 319px) and (orientation : portrait) {
+  .container {
+    width: 200px;
+    }
+    .photo {
+    width: 200px;
+    height: 200px;
+  }
+  .accordion a {
+  font-size: 15px;
+}
+.photohp {
+   height: 891px;
+width: 642px;
+}
+.accordion span:target ~ .accordion-content {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.accordion-content{
+  font-size: 14px;
+}
+[id*="open-accordion"], [id*="close-accordion"] {
+  height: 25px;
+  line-height: 26px;
+}
+[id*="open-accordion"]::after, [id*="close-accordion"]::after{
+  top: 9px;
+  border-left: 4px solid transparent;
+border-right: 4px solid transparent;
+}
+
+  .container{
+  width:1200px;
+   margin:auto;
+
+}
+.photo{
+	background-image: 
+  width: 500px;
+  height: 600px;
+}
+
+
+
+
+
