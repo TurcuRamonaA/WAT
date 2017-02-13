@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-GB"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>WAT —  Web Annotator for Temporality</title>
+    <link rel="stylesheet" href="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/scholarly.css">
+    <link rel="stylesheet" href="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/prism-coy.css">
+    <script src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/prism.js" defer="defer"></script>
+  </head>
+  <body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+    <header>
+      <p class="title">WAT</p>
+      <p class="subtitle">Web Annotator for Temporality</p>
+    </header>
+    <article id="what" typeof="schema:ScholarlyArticle" resource="#">
+      <h1>Tehnical Report for WAT</h1>
+      <section>
+        <ol>
+          <li property="schema:author" typeof="sa:ContributorRole">
+            <a property="schema:author" typeof="schema:Person">
+              <span property="schema:givenName">Constantin</span>
+              <span property="schema:familyName">Scutaru</span>
+            </a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:robin@berjon.com" title="corresponding author">✉</a>
+            </sup>
+          </li>
+          <li property="schema:contributor" typeof="sa:ContributorRole">
+            <a property="schema:contributor" typeof="schema:Person">
+              <span property="schema:givenName">Sandra</span>
+              <span property="schema:familyName">Amarandei</span>
+            </a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:sandra.amarandei@gmail.com" title="corresponding author">✉</a>
+            </sup>
+          </li>
+          <li property="schema:author" typeof="sa:ContributorRole">
+            <a property="schema:author" typeof="schema:Person">
+              <span property="schema:givenName">Ramona</span>
+              <span property="schema:familyName">Turcu</span>
+            </a>
+            <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+              <a property="schema:email" href="mailto:turcu.ramonaandreea@gmail.com" title="corresponding author">✉</a>
+            </sup>
+          </li>
+        </ol>
+
+      </section>
+
+      <section typeof="sa:Abstract" id="abstract">
+        <h2>Abstract</h2>
+        <p>  Many  NLP  applications,  such  as    topic  detection  and
+        tracking,   question   answering   (questions   like   “when”
+        , 
+        “how  often”  or  “how  long”),  information  extraction 
+        or 
+        information retrieval, machine translation, summari
+        zation, 
+        would  benefit  significantly  from  the  ability  to  acc
+        urately 
+        position  detected  events  in  time,  either  relatively
+          with 
+        respect to other events or on an absolute time axis
+        .  
+        As  the  detection  of  temporal  relations  is  known  to 
+        be 
+        very  time  consuming  and  expensive  (Pustejovky  et  al
+        ., 
+        2002),   and,   in   manual   work,   even   far   from   being 
+        complete,  i.e.  about  4%  in  an  initial  manual  annota
+        tion 
+        phase  (Setzer  et  al.,  2005),  the  use  of  discourse  t
+        heories 
+        and    their    adequate    annotations    can    facilitate    the 
+        uncovering of these temporal links. 
+        </p>
+      <p>In  a  recent  work,  Mani  et  al.  (2005)  show  that  a 
+discourse  parser  built  using,  for  example,  the  rhet
+orical 
+structure  (Marcu,  1997)  can  improve  the  events  orde
+ring 
+rules by reasoning based on RST.   
+The  obvious  claim  investigated  in  this  paper  is  tha
+t  a 
+similar relationship as the one between discourse s
+tructure 
+and  referentiality  should  also  exists  between  disco
+urse 
+structure and temporality.  
+To our knowledge, no systematic study of the relati
+on 
+between  RST  or  VT  and  temporal  links  in  discourse  h
+as 
+yet been carried out. 
+        </p>
+      </section>
+      <section typeof="sa:MaterialsAndMethods" id="motivation">
+        <h2>Motivation</h2>
+        <aside typeof="schema:WPSideBar">
+          <p>
+            Temporal  relations  between  events  and  times  are  often  difficult 
+            to  discover,  time-consuming  and  expensive.  In  this  paper  a  corpus 
+            study is performed to derive a strong relation between discourse str
+            ucture, as revealed by Veins theory, and the temporal links betwe
+            en 
+            entities,  as  addressed  in  the  TimeML  annotation  standard.  The  data
+              interpretation  helps  us  gain  insight  on  how  Veins  theory  can 
+            improve the manual and even (semi-) automatic detection of tempor
+            al relations.  
+
+          </p>
+        </aside>
+        <p>
+                
+      </p>
+
+      </section>
+      <section typeof="sa:Results" id="definition">
+        <h2>Definition</h2>
+        <p>
+         Create an online annotation tool associated with a web resource, typically a web page.</br>
+
+One user can add, modify, remove or share information from an XML-annotated resource as (s)he wants in order to obtain his/her own annotation. For sharing, maybe a role-based access control mechanism should be used (e.g., X can edit and share, Y can only view annotations, etc.).</br></br>
+
+For each XML element, the user could specify useful information, like type, relations with other elements, perspective, etc.</br>
+
+The user will have some default tags for annotation and also he will be able to set his own tags for the text analyzed.</br></br>
+
+There will be some default colors for the annotated text to improve readability. By using certain existing vocabularies i.e. conceptual models (see <a href="http://prefix.cc/popular/all">http://prefix.cc/popular/all</a> ) or providing a user-defined vocabulary (via an URL). For temporal constructs, at least DateTime and Event (from schema.org), plus OWL-Time <a href="https://www.w3.org/TR/owl-time/">https://www.w3.org/TR/owl-time/</a> should be used.</br>
+
+Available knowledge will be accessed via a SPARQL endpoint, in conjunction to other sources of interest such as DBpedia and/or Wikidata or the user can upload one book/text file, for example. In order to give a good output, this will be in an XML format and will contain the entire annotated resource.The input XML must be validated first in order to be processed.</br></br>
+
+IDs will be automatically generated, in sequence, with symbols beginning with the first letters of the elements.</br>
+<aside typeof="schema:WPSideBar">
+<p>What is an annotator?</br>
+Basicaly, An annotation is a metadata attached to text, image, or other data. Often, annotations make reference to a specific part of the original data.
+</aside></br>
+</br>
+<aside typeof="schema:WPSideBar">
+Software engineering</br>
+</br>
+Text documents</br>
+Markup languages like XML and HTML annotate text in a way that is syntactically distinguishable from that text. They can be used to add information about the desired visual presentation, or machine-readable semantic information, as in the semantic web.</br>
+Source control</br>
+The "annotate" function (also known as "blame" or "praise") used in source control systems such as Git, Team Foundation Server and Subversion determines who committed changes to the source code into the repository. This outputs a copy of the source code where each line is annotated with the name of the last contributor to edit that line (and possibly a revision number). This can help establish blame in the event a change caused a malfunction, or identify the author of brilliant code.
+  </p>
+  </aside>
+
+        </p>
+       </section>
+      <section typeof="sa:Acknowledgements" id="acknowledgements">
+        <h2>Acknowledgements</h2>
+
+        <h3>Resource representations</h3>
+        <p>
+          GitHub Project:<a href="https://github.com/TurcuRamonaA/WAT/">https://github.com/TurcuRamonaA/WAT/</a></br>
+          WebSite Location:<a href="http://students.info.uaic.ro/~ramona.turcu/WAT/">http://students.info.uaic.ro/~ramona.turcu/WAT/</a></br>
+          Video file Location:<a href="http://youtube.com">http://youtube.com</a></br>
+          Documentation:<a href="http://students.info.uaic.ro/~ramona.turcu/indexDOC.html">http://students.info.uaic.ro/~ramona.turcu/indexDOC.html</a></br>
+        </p>
+        <h3>Overall design from the point of view of a software engineer</h3>
+        <p> Initial diagrams: 
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/mainFlow.png" height="655" width="880">
+            <figcaption>
+              Initial diagram for this web app
+            </figcaption>
+          </figure>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/files.png" height="655" width="880">
+            <figcaption>
+              The diagram shows the main components files that would contain application
+            </figcaption>
+          </figure>
+        </p>
+        <p>
+          Input/Output formats</br>
+          In order to annotate a book, this web application should have a input text. This text can be imported form a DOC file, TXT file or even a XML file.</br>
+          For output, WAT will provide you an validated XML file and will contain the entire annotated resource. </br>
+        </p>
+        <aside typeof="schema:WPSideBar">
+        <p>
+          Modularization</br></br>
+          This application is composed of 6 main modules, modules that interact with each other.</br>
+
+          Login/Logout - in this module include also a register page. Mainly, login/logout module interact with MyTagHistory, Annotation, AvailableKnowledge( are available only after login) but also interact with DB module.</br>
+          MyTagHistory - this module make several queries to the database and give you all tags that you already used. (! available only after login)</br>
+          AvailableKnowledge - available knowledge will be accessed via a SPARQL endpoint, in conjunction to other sources of interest such as DBpedia and/or Wikidata or the user can upload one book/text file, for example. (! available only after login)</br>
+          Annotation - adding a new book, add tags in order to make a XML( for each XML element, the user could specify useful information, like type, relations with other elements, perspective, etc.), the output XML must be validated first in order to be processed and after this can be saved on a local machine, a section with comments from user will be displayed in this web page. (! available only after login)</br>
+          Contact - here we have a simple web page with more infos about this application and one page with infos to contact us.</br>
+          DB - specially used to manage user acconts.</br>
+                  </p>
+      </aside>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/modularization.png" height="655" width="880">
+            <figcaption>
+              Modularization diagram shows the main modules for this web app
+            </figcaption>
+          </figure>
+        <h3> Overall design from a user interaction point of view</h3>
+        <h4> Web interface sketches:</h4>
+         <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/Home.png" height="655" width="880">
+            <figcaption>
+              Home page
+            </figcaption>
+          </figure>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/AfterLogin.png" height="655" width="880">
+            <figcaption>
+              Annotation page(available only after login)
+            </figcaption>
+          </figure>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/Contact.png" height="655" width="880">
+            <figcaption>
+              Contact page
+            </figcaption>
+          </figure>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/About.png" height="655" width="880">
+            <figcaption>
+              About page
+            </figcaption>
+          </figure>
+
+          <h3>Internal data structures/models</h3>
+          <h4>LOGIN/LOGOUT  module</h4>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/activity_login.png" height="655" width="880">
+            <figcaption>
+              Activity diagram 
+            </figcaption>
+          </figure>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/myaccount.png" height="655" width="880">
+            <figcaption>
+              Use-case diagram 
+            </figcaption>
+          </figure>
+          <h4>ANNOTATION  module</h4>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/activity_annotation.png" height="655" width="880">
+            <figcaption>
+              Activity diagram 
+            </figcaption>
+          </figure>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/mainpage.png" height="655" width="880">
+            <figcaption>
+              Use-case diagram 
+            </figcaption>
+          </figure>
+          <h4>MyTagHistory  module</h4>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/activity_myTagHistory.png" height="655" width="880">
+            <figcaption>
+              Activity diagram 
+            </figcaption>
+          </figure>
+          <h4>CONTACT  module</h4>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/activity_contact.png" height="655" width="880">
+            <figcaption>
+              Activity diagram 
+            </figcaption>
+          </figure>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/contactdiag.png" height="655" width="880">
+            <figcaption>
+              Use-case diagram 
+            </figcaption>
+          </figure>
+          <h4>DB  module</h4>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/activity_db.png" height="655" width="880">
+            <figcaption>
+              Activity diagram 
+            </figcaption>
+          </figure>
+          <h3>Asptects concerning our API</h3>
+          <h4>Introduction</h4>
+          <p>
+            Building a back-end API layer introduces a whole new layer of coordination between server and client code.While there are many aspects to this delicate dance of communication, one key ingredient to minimizing back-and-forth-confusion-about what-call-does-what, is consistently communicating about your API endpoints.</br>
+            There are several options for authenticating with the API. The basic choice boils down to:</br>
+            - Are you a plugin/theme running on the site? Use cookie authentication</br>
+            - Are you a desktop/web/mobile client accessing the site externally? Use OAuth authentication, application passwords, or basic authentication.</br>
+            Our API 
+          </p>
+          <h4>Getting started with our API</h4>
+          <p>
+            <aside typeof="schema:WPSideBar">
+              Title: WAT API
+            </aside> 
+          </br>
+            <aside typeof="schema:WPSideBar">
+              The URL structure (path only, no root url)
+              <h4>/users</h4> or <h4>/users/{userId}/</h4> or <h4>/files</h4>
+              For fixed urls: /users or /photos
+              For urls with parameters in them: /users/:id or /files/date/date_id 
+            </aside> 
+          </br>
+           <aside typeof="schema:WPSideBar">
+            Method - The request type: </br>
+            GET | POST | DELETE | PUT </br>
+          </aside>
+           <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/api-1.png" height="655" width="880">
+          </figure>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/api-2.png" height="655" width="880">
+          </figure>
+          <figure typeof="sa:Image">
+            <img src="Scholarly%20HTML%20%E2%80%94%20Markedly%20Smart_files/api-3.png" height="655" width="880">
+          </figure>
+          </br>
+           <aside typeof="schema:WPSideBar">
+            Data params: </br>
+            </aside> 
+            CODE Example: 
+            <figure>
+            <pre class=" language-jsonld"><code class=" language-jsonld">
+[Route("~api/users/{userId}/files")]
+public IQueryable<FileDto> GetFilesByUser(int userId)
+{
+    return db.Files.Include(b => b.User)
+             .Where(b => b.UserId == userId)
+             .Select(AsFileDto);
+}
+            </code></pre></figure>
+          Example 1: (/api/files/date/2000-09-02)
+          <figure><pre class=" language-jsonld"><code class=" language-jsonld">
+[
+  {
+  "Title":"Lover Birds",
+  "User":"Randall,Cynthia",
+  "Genre":"Romance"
+  }
+]
+          </code></pre></figure>
+          Example 2: (/api/files/3)
+          <figure><pre class=" language-jsonld"><code class=" language-jsonld">
+[
+ {
+  "Title":"The Sundered Grail",
+  "User":"Corets, Eva",
+  "Genre":"Fantasy"
+}
+]
+          </code></pre></figure>
+          Example 3: (/api/files/3/details)
+          <figure><pre class=" language-jsonld"><code class=" language-jsonld">
+[
+  {
+  "Title":"The Sundered Grail",
+  "Genre":"Fantasy",
+  "PublishDate":"2001-09-10T00:00:00",
+  "Description":"The two daughters of Maeve battle for control of England.",
+  "User":"Corets, Eva"
+  }
+]
+          </code></pre></figure>
+          </p>
+        <h3>RDF model</h3>
+        <p>
+          
+        </p>
+          <h3>Interoperability and security</h3>
+          <h4>Security:</h4>
+          <p>
+           ASP.NET Identity</br></br>
+
+The ASP.NET Identity system is designed to replace the previous ASP.NET Membership and Simple Membership systems. It includes profile support, OAuth integration, works with OWIN, and is included with the ASP.NET templates shipped with Visual Studio 2013.</br>
+
+The topic of creating a secure Web application is extensive. It requires study to understand security vulnerabilities.
+Use the inherent security of your database to limit who can access database resources.</br>
+We not create SQL statements by concatenating strings that involve user input. Instead, we create a parameterized query and use user input to set parameter values. 
+          </p>
+
+
+
+
+
+
+      </section>
+      <section typeof="sa:Conclusion" id="conclusion">
+        <h2></h2>
+        <p>
+          
+        </p>
+      </section>
+      <section typeof="sa:ReferenceList" id="references">
+        <h2>References</h2>
+        <dl>
+          <dt>NYT, 2014</dt>
+          <dd id="ref-nyt" typeof="schema:ScholarlyArticle" resource="http://www.scribd.com/doc/224608514/The-Full-New-York-Times-Innovation-Report">
+            <cite property="schema:name"><a href="http://www.scribd.com/doc/224608514/The-Full-New-York-Times-Innovation-Report">The
+              Full New York Times Innovation Report</a></cite>,
+            by
+            <span property="schema:author" typeof="schema:Person">
+              <span property="schema:name">New York Times</span>
+            </span>;
+            <time property="schema:datePublished" datetime="2014-03" datatype="xsd:gYearMonth">2014 Mar</time>.
+          </dd>
+         <a href="http://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html">http://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html</a></br>
+         <a href="http://www.ixedo.ro/page/tehnologii-web-software">http://www.ixedo.ro/page/tehnologii-web-software</a></br>
+         <a href="http://webappsuccess.com/web-technology-fundamentals.html">http://webappsuccess.com/web-technology-fundamentals.html</a></br>
+
+        </dl>
+      </section>
+    </article>
+    <footer>
+      <p>
+        
+      </p>
+    </footer>
+  
+
+</body></html>
